@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sora: 'Sora', sans-serif;
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    background: #faf8f5;
+    color: #16130f;
+    font-family: var(--font-sora), sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  input, select, textarea, button {
+    font-family: inherit;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium
+           border border-paper-3 bg-white text-ink-2 transition-all duration-150
+           hover:bg-paper-2 active:scale-95 cursor-pointer;
+  }
+  .btn-primary {
+    @apply bg-ink text-paper border-ink hover:bg-ink-2;
+  }
+  .btn-danger {
+    @apply bg-danger-light text-danger border-danger/20 hover:bg-red-100;
+  }
+  .btn-sm {
+    @apply px-3 py-1.5 text-xs;
+  }
+  .input {
+    @apply w-full px-3 py-2 text-sm rounded-lg border border-paper-3 bg-white
+           text-ink focus:outline-none focus:border-ink-3 transition-colors
+           placeholder:text-ink-4;
+  }
+  .label {
+    @apply block text-xs font-medium text-ink-3 uppercase tracking-wide mb-1;
+  }
+  .card {
+    @apply bg-white border border-paper-3 rounded-xl overflow-hidden;
+  }
+  .badge {
+    @apply inline-block px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-ok     { @apply bg-success-light text-success-dark; }
+  .badge-baixo  { @apply bg-warn-light text-warn-dark; }
+  .badge-out    { @apply bg-danger-light text-danger-dark; }
+}

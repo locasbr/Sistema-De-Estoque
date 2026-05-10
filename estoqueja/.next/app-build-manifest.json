@@ -1,0 +1,35 @@
+{
+  "pages": {
+    "/(dashboard)/(dashboard)/dashboard/produtos/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/(dashboard)/dashboard/produtos/page.js"
+    ],
+    "/(dashboard)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/layout.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/(dashboard)/(dashboard)/dashboard/movimentacoes/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/(dashboard)/dashboard/movimentacoes/page.js"
+    ],
+    "/(dashboard)/(dashboard)/dashboard/alertas/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/(dashboard)/dashboard/alertas/page.js"
+    ],
+    "/(dashboard)/(dashboard)/dashboard/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/(dashboard)/dashboard/page.js"
+    ]
+  }
+}
